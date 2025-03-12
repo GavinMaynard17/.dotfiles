@@ -1,0 +1,31 @@
+{
+    "layer": "top",
+    "output": "DP-5",
+    "modules-left": [hyprland/workspaces],
+    "modules-center": [clock],
+    "modules-right: [],
+    "hyprland/workspaces": {
+        "all-outputs": false,
+        "format": "{icon}",
+        "on-click": "activate",
+        "format-icons":{
+            "urgent": "",
+            "active": "",
+            "default": "",
+        }
+    },
+    "clock": {
+        "interval": 60,
+        "tooltip": true,
+        "format": "{:%a, %-I:%M %p}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    }
+},
+{
+    "layer": "top",
+    "output": "HDMI-A-2",
+},
+{
+    "layer": "top",
+    "output": "LAPTOP SCREEN",
+}
