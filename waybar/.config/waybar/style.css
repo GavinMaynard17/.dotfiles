@@ -1,20 +1,26 @@
 * {
     /* `otf-font-awesome` and SpaceMono Nerd Font are required to be installed for icons */
-    font-family: "Fira Sans Semibold", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-family: "Fira Sans Semibold", "FontAwesome", "SpaceMono Nerd Font", sans-serif;
+    /*font-family: "Fira Sans Semibold", "FontAwesome", Roboto, Helvetica, Arial, sans-serif;*/
     font-size: 14px;
+    font-weight: 500;
+    padding: 0;
+    margin: -1;
     /*transition: background-color .3s ease-out;*/
 }
 
 window#waybar {
     /*background: rgba(26, 27, 38, 0.75);*/
     /*background: rgba(8, 19, 26, 1);*/
-    background: rgba(0,0,0,1);
+    all:unset;
+    background: rgba(0,0,0,0.4);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     color: #FFFFFF;
     /*color: #c0caf5;*/
-    font-family: 
+    /*font-family: 
         SpaceMono Nerd Font,
-        feather;
-    transition: background-color .5s;
+        feather;*/
+    transition: background-color .3s ease;
 }
 
 .modules-left,
@@ -22,11 +28,11 @@ window#waybar {
 .modules-right
 {
     background: transparent;
-    margin: 0 5px;
+    margin: 0 8px;
     padding: 0 5px;
 }
 .modules-left {
-    padding: 0;
+    padding: 4px 12px;
 }
 .modules-center {
     padding: 0;
@@ -50,8 +56,9 @@ window#waybar {
 #power-profiles-daemon,
 #language,
 #mpd {
-    padding: 0 10px;
-    border-radius: 15px;
+    padding: 0 8px;
+    border-radius: 10px;
+    color: #FFFFFF;
 }
 
 #clock:hover,
@@ -72,7 +79,9 @@ window#waybar {
 #power-profiles-daemon:hover,
 #language:hover,
 #mpd:hover {
-    background: rgba(26, 27, 38, 0.9);
+    /*background: rgba(26, 27, 38, 0.9);*/
+    background: rgba(255, 255, 255, 0.15);
+    transition: background-color 0.2s ease;
 }
 
 
@@ -80,31 +89,40 @@ window#waybar {
   background: transparent;
   font-family:
     SpaceMono Nerd Font,
-    feather;
-  font-weight: 900;
-  font-size: 13pt;
-  color: #c0caf5;
+    sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #D0D0D0;
   border:none;
-  border-radius: 15px;
+  border-radius: 10px;
+  padding: 0 6px;
+  margin: 0 2px;
 }
 
 #workspaces button.active {
-  background: #cdd6f4;
-  color: rgba(0, 0, 8, .7); 
+  /*background: #cdd6f4;
+  color: rgba(0, 0, 8, .7);*/ 
+    background: rgba(255, 255, 255, 0.25);
+    color: #FFFFFF;
+    margin: 2px;
 }
 
 #workspaces button:hover {
-  background: #cdd6f4;
+  /*background: #cdd6f4;
   color: rgba(0, 0, 8, .7);
-  box-shadow: none;
+  box-shadow: none;*/
+    background: rgba(255, 255, 255, 0.2);
+    color: #FFFFFF;
+    margin: 2px;
 }
 
 #custom-arch {
-    margin-left: 5px;
+    margin-left: 8px;
     padding: 0 10px;
-    font-size: 15px;
-    transition: color .5s;
+    font-size: 18px;
+    transition: color .3s ease;
 }
 #custom-arch:hover {
-    color: #1793d1;
+    /*color: #1793d1;*/
+    color: #40C4FF;
 }

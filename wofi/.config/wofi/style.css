@@ -2,7 +2,7 @@ window {
   font-family: "DejaVu Sans", "Font Awesome 5 Free";
   margin: 0px;
   border: 1px solid rgba(222, 184, 141, 1);
-  background-color: rgba(8, 19, 26, .9);
+  background-color: rgba(8, 19, 26, .4);
   border-radius: 10px;
 }
 
