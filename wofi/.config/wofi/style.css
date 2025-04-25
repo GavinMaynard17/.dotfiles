@@ -1,18 +1,20 @@
+
 window {
-  font-family: "DejaVu Sans", "Font Awesome 5 Free";
+  font-family: "Fira Sans Semibold", "FontAwesome", "SpaceMono Nerd Font", sans-serif;
   margin: 0px;
-  border: 1px solid rgba(222, 184, 141, 1);
-  background-color: rgba(8, 19, 26, .4);
+  font-size: 13px;
+  border: 1px solid rgba(222, 184, 141, 1); /* Keeping border */
+  background-color: rgba(0, 0, 0, 0.4);
   border-radius: 10px;
 }
 
 #input {
   margin: 5px;
-  color: rgba(222, 184, 141, 1);
-  background-color: rgba(30, 72, 98, .95);
+  color: #FFFFFF;
+  background-color: rgba(0, 0, 0, 0.6);
   border: none;
   outline: none;
-  box-shadow: 0 0 0 1px rgba(222, 184, 141, 1);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.15);
 }
 
 #inner-box {
@@ -35,19 +37,28 @@ window {
 #text {
   margin: 5px;
   border: none;
-  color: rgba(222, 184, 141, 1);
+  color: #FFFFFF;
+  font-family: "Fira Sans Semibold", "FontAwesome", "SpaceMono Nerd Font", sans-serif;
 }
 
 #entry {
   border: none;
+  color: #FFFFFF;
+  font-size: 13px;
+  background-color: transparent;
+  border-radius: 5px;
+  font-family: "Fira Sans Semibold", "FontAwesome", "SpaceMono Nerd Font", sans-serif;
 }
 
 #entry:focus {
   border: none;
+  background-color: rgba(255, 255, 255, 0.15);
 }
 
 #entry:selected {
-  background-color: rgba(30, 72, 98, .95); 
+  background-color: rgba(255, 255, 255, 0.25);
   border-radius: 5px;
   border: none;
+  color: #FFFFFF;
 }
+
